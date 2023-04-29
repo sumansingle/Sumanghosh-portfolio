@@ -1,0 +1,69 @@
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project:hover p {
+    opacity: 1;
+  }
+  .work{
+    color: chocolate;
+    background-color: beige;
+    text-align: center;
+    text-shadow: #171717;
+    text-decoration: solid;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+  }
+  .outro{
+    color: chocolate;
+    background-color: burlywood;
+    text-align: center;
+    text-shadow: #171717;
+    text-decoration: solid;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+  }

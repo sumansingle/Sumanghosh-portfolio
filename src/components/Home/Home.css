@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Roboto:ital@1&display=swap');
+.home{
+    background-color: #171717;
+    color: aliceblue;
+}
+.welcome{
+    font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: 100px;
+color: #f4544e;
+
+}
+.myname{
+    font-size: 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #feaa00;
+}
+.text{
+    font-size: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+}
