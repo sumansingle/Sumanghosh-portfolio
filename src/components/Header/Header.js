@@ -5,7 +5,6 @@ function Header() {
   return (
     <>
     <div className='header'>
-    
     <div className='leftsection'>
       <p className='heading'>Suman Ghosh</p>
     </div>

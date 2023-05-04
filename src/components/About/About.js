@@ -9,7 +9,7 @@ function About() {
     <div className='about-container'>
     <div className='about-photo'> <img src={Photo1} alt=''/></div>
    <div className='about-text'>
-    <h2>Hi there. I am Suman Ghosh. I am a full stack web developer.</h2>
+    <h2 className='text-heading'>Hi there. I am Suman Ghosh. I am a full stack web developer.</h2>
      <p>From the first time i am learned the programming languages when i am in my college here i am learned basic knowledge
       of java c/c++ this year of 2020.
      </p>

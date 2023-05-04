@@ -7,18 +7,85 @@
     font-family: 'Inter', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
-font-size: 100px;
+font-size: 50px;
 color: #f4544e;
 
 }
+.typewriter {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    overflow: hidden;
+    background-color: #171717;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.typewriter span {
+    display: inline-block;
+    margin-right: 5px;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+    animation: pop 0.75s ease forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff }
+}
+
+@keyframes pop {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.typewriter span:nth-child(1) { animation-delay: 0.25s; background-color: #ff2d5d; }
+.typewriter span:nth-child(2) { animation-delay: 0.5s; background-color: #fcb100; }
+
+.typewriter span:nth-child(4) { animation-delay: 1s; background-color: #7e3af2; }
+.typewriter span:nth-child(5) { animation-delay: 1.25s; background-color: #02cc8b; }
+.typewriter span:nth-child(6) { animation-delay: 0.75s; background-color: #00e0ff; }
+.typewriter span:nth-child(7) { animation-delay: 1s; background-color: #7e3af2; }
+.typewriter span:nth-child(8) { animation-delay: 1.25s; background-color: #02cc8b; }
+.typewriter span:nth-child(9) { animation-delay: 0.75s; background-color: #00e0ff; }
+
 .myname{
-    font-size: 130px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
     font-weight: 400;
     color: #feaa00;
+			font-family: 'Courier New', Courier, monospace;
+			overflow: hidden;
+			border-right: .15em solid #555;
+			white-space: nowrap;
+			letter-spacing: .15em;
+			animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
+@keyframes myname {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #555 }
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
 .text{
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
     color: white;
