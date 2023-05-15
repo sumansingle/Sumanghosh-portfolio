@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo1 from '../../assets/sumanphoto.jpg';
 import './About.css';
+import ContactFrom from '../Contact From/ContactFrom' ;
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
      <p>Here i am learned about java,javascript,react,html,css and node js,redux also make some good project on this skills</p>
    </div>
    </div>
+   <ContactFrom/>
     </>
   )
 }
