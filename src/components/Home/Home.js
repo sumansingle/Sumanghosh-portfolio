@@ -3,6 +3,7 @@ import '../Home/Home.css';
 import Examples from '../Name/examples';
 import Career from '../Career/Career';
 import Skills from '../Skill/Skill';
+import Resume from '../../Resume/Resume';
 function Home() {
   return (
     <>
@@ -26,6 +27,7 @@ function Home() {
     </div>
     <Career/>
     <Skills/>
+    <Resume/>
     </>
   )
 }

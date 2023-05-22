@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Roboto:ital@1&display=swap');
 .home{
-    background-color: #171717;
+    background-color: #1B262C;
     color: aliceblue;
 }
 .welcome{
@@ -16,7 +16,7 @@ color: #f4544e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     overflow: hidden;
-    background-color: #171717;
+    background-color: #BBDED6;
     white-space: nowrap;
     animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }

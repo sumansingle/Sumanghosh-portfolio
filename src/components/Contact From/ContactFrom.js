@@ -67,9 +67,9 @@ const Form = () => {
             />
           </div>
           <div>
-            <label htmlFor="text">Message:</label>
+            <label htmlFor="message">Message:</label>
             <input
-              type="text"
+              type="message"
               id="text"
               value={text}
               onChange={(e) => setText(e.target.value)}
