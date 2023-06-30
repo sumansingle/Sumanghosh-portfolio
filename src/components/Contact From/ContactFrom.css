@@ -1,5 +1,5 @@
 .form-container {
-    padding: 100px;
+    padding: 150px;
     background-color: #126E82;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -46,4 +46,7 @@
     text-align: center;
     color: #007bff;
   }
-  
+  #text{
+    padding: 30px;
+
+  }

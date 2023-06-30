@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital@1&display=swap');
 .footer-container {
-    background-color: #303841;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -23,9 +24,7 @@
     color: #007bff;
   }
   .footer-text{
-    margin-top: 100px;
     color: #e26506;
     font-family: 'Josefin Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
   }
   

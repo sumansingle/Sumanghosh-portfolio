@@ -1,35 +1,64 @@
 
 .container {
-	margin: auto;
+	margin: 5px;
 	padding: 20px;
-	background-color: #112D4E;
 	border-radius: 5px;
 }
+.job {
+	
+	padding-left: 30px; /* Adjust this value to create space for the dot */
+	border-bottom: none; /* Remove the default border */
+	
+}
 
+.job:before {
+	content: "";
+	
+	top: 5%;
+	left: 0;
+	transform: translate(-50%, -50%);
+	width: 20px; /* Adjust this value to control the size of the dot */
+	height: 20px; /* Adjust this value to control the size of the dot */
+	border-radius: 50%;
+	background-color: red; /* Color of the dot */
+}
+
+.job:after {
+	content: "";
+	
+	top: 100%;
+	left: 0;
+	width: 1px; /* Width of the line */
+	height: 400px; /* Height of the line */
+	background-color: #000; /* Color of the line */
+	transform: translateY(-50%);
+}
+  
 h1 {
 	text-align: center;
 	margin-bottom: 30px;
-    color: aliceblue;
+    color: "";
 }
 
-.job {
+/*.job {
 	margin-bottom: 30px;
-	border-bottom: 1px solid #dcdcdc;
+	border-bottom: 1px solid ;
 	padding-bottom: 20px;
-}
+}*/
 
 h2 {
-	color: #e26506;
 	margin-bottom: 10px;
     font-size: 30px;
+	font-family: Times New Roman;
 }
 
 h3 {
-	color: #999;
+	font-family: Arial;
 	margin-bottom: 10px;
 }
 
 p {
-	color: #666;
+	font-family: Georgia;
 	line-height: 1.5;
+	font-size: 17px;
 }

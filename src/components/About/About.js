@@ -1,14 +1,12 @@
 import React from 'react';
-import Photo1 from '../../assets/sumanphoto.jpg';
 import './About.css';
-import ContactFrom from '../Contact From/ContactFrom' ;
 
 function About() {
   return (
     <>
     <div className='about'>About</div>
     <div className='about-container'>
-    <div className='about-photo'> <img src={Photo1} alt=''/></div>
+    {/*<div className='about-photo'> <img src={Photo1} alt=''/></div>*/}
    <div className='about-text'>
     <h2 className='text-heading'>Hi there. I am Suman Ghosh. I am a full stack web developer.</h2>
      <p>From the first time i am learned the programming languages when i am in my college here i am learned basic knowledge
@@ -20,7 +18,7 @@ function About() {
      <p>Here i am learned about java,javascript,react,html,css and node js,redux also make some good project on this skills</p>
    </div>
    </div>
-   <ContactFrom/>
+   {/*<ContactFrom/>*/}
     </>
   )
 }

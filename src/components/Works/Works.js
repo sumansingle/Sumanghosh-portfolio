@@ -13,7 +13,7 @@ import './Works.css';
 function Works() {
   return (
     <>
-      <div className='work'>Works</div>
+      {/*<div className='work'>Works</div>*/}
       <div className='project-list'>
         <div className='project'>
           <img src={NewsfeedPhoto} alt='' />
@@ -70,9 +70,9 @@ function Works() {
           </a>
         </div>
       </div>
-      <div>
+      {/*<div>
         <h2 className='outro'>This is my project list</h2>
-        </div>
+  </div>*/}
     </>
   );
 }

@@ -10,7 +10,7 @@ const ResumeComponent = () => {
         <iframe src={resumePdfUrl} title="Resume" className="resume-iframe" />
       </div>
       <a href={resumePdfUrl} target="_blank" rel="noopener noreferrer" className="resume-link">
-        Download Resume
+        View Resume
       </a>
     </div>
   );

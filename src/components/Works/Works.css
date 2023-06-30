@@ -1,17 +1,17 @@
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
     justify-items: center;
     align-items: center;
   }
   
   .project {
-    position: relative;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    margin-top: 100px;
   }
   
   .project:hover {

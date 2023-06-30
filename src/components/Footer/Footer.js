@@ -20,7 +20,7 @@ function Footer() {
         </a>
       </div>
       <div className="footer-text">
-        <p>Handcrafted with ❤️ by me. ❤</p>
+        <p>Handcrafted with ❤️ by me. suman❤</p>
         </div>
     </div>
   );

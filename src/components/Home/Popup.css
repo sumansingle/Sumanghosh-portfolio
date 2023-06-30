@@ -1,0 +1,40 @@
+.popup {
+    position: fixed;
+    overflow: hidden;
+    backdrop-filter: blur 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .popup-content {
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #e2e2e2;
+  }
+  
+  body.popup-open {
+    overflow: hidden;
+  }
+  
