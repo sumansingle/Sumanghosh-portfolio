@@ -5,15 +5,26 @@
 	border-radius: 5px;
 }
 .job {
-	
 	padding-left: 30px; /* Adjust this value to create space for the dot */
 	border-bottom: none; /* Remove the default border */
 	
 }
+#circle {
+    background: darkred;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.line-skill{
+	border-left: 2px solid darkred;
+  height: 1000px;
+  position:absolute;
+  margin-left: 13px;
+  }
 
 .job:before {
 	content: "";
-	
 	top: 5%;
 	left: 0;
 	transform: translate(-50%, -50%);

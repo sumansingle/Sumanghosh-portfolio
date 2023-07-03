@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Home/Popup.css';
+import '../About/Popup.css';
 const Popup = ({ onClose, children }) => {
   return (
     <div className="popup">
