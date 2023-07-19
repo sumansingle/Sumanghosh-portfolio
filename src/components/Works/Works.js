@@ -17,7 +17,7 @@ function Works() {
       <div className='project-list'>
         <div className='project'>
           <img src={NewsfeedPhoto} alt='' />
-          <a href='https://sweet-youtiao-7b0601.netlify.app/'> 
+          <a href='https://heartfelt-praline-d3bb48.netlify.app/'> 
           <p>Newsfeed Project</p>
           </a>
         </div>

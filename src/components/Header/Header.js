@@ -1,13 +1,15 @@
 import React from 'react'
 import '../Header/Header.css';
 import { Outlet, Link } from "react-router-dom";
-import Suman from '../../assets/suman.png'
+import Logo from '../../assets/logo-change.png'
 function Header() {
   return (
     <>
     <div className='header'>
     <div className='leftsection'>
-      <div className='heading'><img src={Suman} height={80} width={150} /></div>
+      <div className='logo'>
+        <img src={Logo} height={80} width={100} className='logo-img' alt='logo'/>
+        </div>
     </div>
     <div className='rightsection'>
      <ul>

@@ -1,10 +1,10 @@
 .form-container {
     padding: 150px;
-    background-color: #126E82;
-    border: 1px solid #ddd;
+    background-color: white;
     border-radius: 5px;
     align-items: center;
     text-align: center;
+   
   }
   
   .form-container h2 {
@@ -16,6 +16,8 @@
   .form-container form {
     display: flex;
     flex-direction: column;
+    gap:20px;
+    align-items: center;
   }
   
   .form-container label {
@@ -29,16 +31,18 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     width :500px
+    
   }
-  
+  input{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
   .form-container button {
-    padding: 10px;
+    padding: 15px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  
   }
   
   .success-message {
