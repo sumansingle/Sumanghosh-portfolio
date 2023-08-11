@@ -1,56 +1,56 @@
-
 .container {
-	margin: 5px;
-	padding: 20px;
-	border-radius: 5px;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px #a8aeb1, -10px -10px 15px #d2d8dd;
 }
 .job {
-	padding-left: 30px; /* Adjust this value to create space for the dot */
+  padding-left: 30px; /* Adjust this value to create space for the dot */
 }
 #circle {
-    background: darkred;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-	margin-left: -15px;
+  background: darkred;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
 }
 
-.line-skill{
-	border-left: 2px solid darkred;
+.line-skill {
+  border-left: 2px solid darkred;
   height: 1100px;
   margin-left: 20px;
   overflow: hidden;
-  }
-.carrer-details{
-	margin-right: 200px;
+}
+.carrer-details {
+  margin-right: 200px;
 }
 
 .job:before {
-	content: "";
-	top: 5%;
-	left: 0;
-	transform: translate(-50%, -50%);
-	width: 20px; /* Adjust this value to control the size of the dot */
-	height: 20px; /* Adjust this value to control the size of the dot */
-	border-radius: 50%;
-	background-color: red; /* Color of the dot */
+  content: "";
+  top: 5%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 20px; /* Adjust this value to control the size of the dot */
+  height: 20px; /* Adjust this value to control the size of the dot */
+  border-radius: 50%;
+  background-color: red; /* Color of the dot */
 }
 
 .job:after {
-	content: "";
-	
-	top: 100%;
-	left: 0;
-	width: 1px; /* Width of the line */
-	height: 400px; /* Height of the line */
-	background-color: #000; /* Color of the line */
-	transform: translateY(-50%);
+  content: "";
+
+  top: 100%;
+  left: 0;
+  width: 1px; /* Width of the line */
+  height: 400px; /* Height of the line */
+  background-color: #000; /* Color of the line */
+  transform: translateY(-50%);
 }
-  
+
 h1 {
-	text-align: center;
-	margin-bottom: 30px;
-    color: "";
+  text-align: center;
+  margin-bottom: 30px;
+  color: "";
 }
 
 /*.job {
@@ -60,23 +60,23 @@ h1 {
 }*/
 
 h2 {
-	margin-bottom: 10px;
-    font-size: 30px;
-	font-family: Times New Roman;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: Times New Roman;
 }
 
 h3 {
-	font-family: Arial;
-	margin-bottom: 10px;
+  font-family: Arial;
+  margin-bottom: 10px;
 }
 
 p {
-	font-family: Georgia;
-	line-height: 1.5;
-	font-size: 17px;
+  font-family: Georgia;
+  line-height: 1.5;
+  font-size: 17px;
 }
 
-.career{
-	display: flex;
-	flex-direction: row;
+.career {
+  display: flex;
+  flex-direction: row;
 }
