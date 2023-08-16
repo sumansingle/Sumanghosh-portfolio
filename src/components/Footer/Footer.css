@@ -13,11 +13,13 @@
   justify-content: center;
   align-items: center;
 }
-
 .icon {
   font-size: 2rem;
   color: #555;
   margin: 0 1rem;
+  box-shadow: 10px 10px 15px #a8aeb1, -10px -10px 15px #d2d8dd;
+  padding: 10px;
+  border-radius: 17px;
 }
 
 .icon:hover {
