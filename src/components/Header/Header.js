@@ -4,7 +4,10 @@ import { Outlet, Link } from "react-router-dom";
 import Logo from "../../assets/logo-change.png";
 import Hamburger from "../../assets/hamburger.png";
 import Sidebar from "../Header/Sidebar"; // Import the Sidebar component
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faListCheck } from '@fortawesome/free-solid-svg-icons';
 function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -40,17 +43,17 @@ function Header() {
           <ul>
             <li>
               <Link to="/" className="list-item line">
-                About
+              <FontAwesomeIcon icon={faHouse} />
               </Link>
             </li>
             <li>
               <Link to="/works" className="list-item line">
-                Project
+              <FontAwesomeIcon icon={faListCheck} />
               </Link>
             </li>
             <li>
               <Link to="/contact" className="list-item line">
-                Contact
+              <FontAwesomeIcon icon={faAddressCard} />
               </Link>
             </li>
           </ul>
