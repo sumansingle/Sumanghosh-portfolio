@@ -1,6 +1,6 @@
 import React from "react";
-import NewsfeedPhoto from "../../assets/newsfeed.png";
-import BookMyShowPhoto from "../../assets/bookmyshow.png";
+import NewsfeedPhoto from "../../assets/NewsFeed.jpg";
+import BookMyShowPhoto from "../../assets/BookMyShow.jpg";
 import BitDecodersPhoto from "../../assets/bitdecoders.png";
 import WeatherAppPhoto from "../../assets/weather.png";
 import EventaGameBookingPhoto from "../../assets/eventbooking.png";
@@ -8,6 +8,8 @@ import EcommercePhoto from "../../assets/ecommerce.png";
 import PortfolioPhoto from "../../assets/portfolio.png";
 import CoffeHousePhoto from "../../assets/coffehouse.png";
 import JsDocumentPhoto from "../../assets/jsdocument.png";
+import ZomatoPhoto from "../../assets/Zomato.jpg";
+import PhotoGellory from "../../assets/PhotoGellory.jpg";
 import "./Works.css";
 
 function Works() {
@@ -18,7 +20,7 @@ function Works() {
         <div className="project-list">
           <div className="project">
             <img src={NewsfeedPhoto} alt="" />
-            <a href="https://heartfelt-praline-d3bb48.netlify.app/">
+            <a href="https://6cqryk.csb.app/">
               <p>Newsfeed Project</p>
             </a>
           </div>
@@ -26,6 +28,12 @@ function Works() {
             <img src={BookMyShowPhoto} alt="" />
             <a href="https://gleeful-tiramisu-14f673.netlify.app/">
               <p>BookMyShow Project</p>
+            </a>
+          </div>
+          <div className="project">
+            <img src={ZomatoPhoto} alt="" />
+            <a href="profound-profiterole-974e29.netlify.app">
+              <p>Zomato Project</p>
             </a>
           </div>
           <div className="project">
@@ -56,6 +64,12 @@ function Works() {
             <img src={PortfolioPhoto} alt="" />
             <a href="https://dazzling-stroopwafel-bf1f0c.netlify.app/">
               <p>Portfolio Project</p>
+            </a>
+          </div>
+          <div className="project">
+            <img src={PhotoGellory} alt="" />
+            <a href="https://bright-scone-6b5b57.netlify.app/">
+              <p>Photo Gellory Project</p>
             </a>
           </div>
           <div className="project">
