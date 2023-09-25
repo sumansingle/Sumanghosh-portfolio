@@ -1,22 +1,5 @@
 import React from "react";
 import "../Skill/Skill.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faJs,
-  faJava,
-  faHtml5,
-  faCss3,
-  faC,
-  faCpp,
-  faReact,
-  faBootstrap,
-  faMaterialUI,
-  faTailwindCss,
-  faNodeJs,
-  faRedux,
-  faDatabase
-  // Add more icons here as needed
-} from "@fortawesome/free-brands-svg-icons";
 
 function TechStack() {
   return (
@@ -25,47 +8,47 @@ function TechStack() {
       <h2>Languages:</h2>
       <ul>
         <li className="li-item">
-          <FontAwesomeIcon icon={faJs} /> JavaScript
+          JavaScript
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faJava} /> Java
+          Java
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faHtml5} /> HTML
+         HTML
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faCss3} /> CSS
+          CSS
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faC} /> C
+          C
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faCpp} /> C++
+          C++
         </li>
       </ul>
       <h2>Technologies:</h2>
       <ul>
         <li className="li-item">
-          <FontAwesomeIcon icon={faReact} /> ReactJS
+          ReactJS
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faBootstrap} /> Bootstrap
+          Bootstrap
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faNodeJs} /> Node.js
+          Node.js
         </li>
 
         <li className="li-item">
-          <FontAwesomeIcon icon={faRedux} /> Redux
+          Redux
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faTailwindCss} /> TailwindCss
+          TailwindCss
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faMaterialUI} /> MaterialUI
+          MaterialUI
         </li>
         <li className="li-item">
-          <FontAwesomeIcon icon={faDatabase} /> MongoDB
+          MongoDB
         </li>
         {/* Add more items with icons as needed */}
       </ul>
