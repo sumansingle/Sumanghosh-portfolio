@@ -26,7 +26,7 @@ function Works() {
           </div>
           <div className="project">
             <img src={BookMyShowPhoto} alt="" />
-            <a href="https://gleeful-tiramisu-14f673.netlify.app/">
+            <a href="https://delightful-klepon-076961.netlify.app/">
               <p>BookMyShow Project</p>
             </a>
           </div>
