@@ -32,7 +32,7 @@ function Works() {
           </div>
           <div className="project">
             <img src={ZomatoPhoto} alt="" />
-            <a href="https://profound-profiterole-974e29.netlify.app">
+            <a href="https://main--inquisitive-cucurucho-17371e.netlify.app/">
               <p>Zomato Project</p>
             </a>
           </div>
