@@ -44,7 +44,7 @@ function Works() {
           </div>
           <div className="project">
             <img src={EventaGameBookingPhoto} alt="" />
-            <a href="https://sunny-twilight-7535ec.netlify.app/">
+            <a href="https://main--silly-basbousa-ed647b.netlify.app/">
               <p>EventGameBooking Project</p>
             </a>
           </div>
