@@ -1,10 +1,11 @@
 import React from "react";
 import "../Skill/Skill.css";
+import { Typography } from "@mui/material";
 
 function TechStack() {
   return (
     <div className="tech-stack-container">
-      <h2 className="skills">Skills</h2>
+      <Typography variant="h4">Skills</Typography>
       <h2>Languages:</h2>
       <ul>
         <li className="li-item">

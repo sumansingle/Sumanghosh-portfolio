@@ -11,12 +11,13 @@ import JsDocumentPhoto from "../../assets/jsdocument.png";
 import ZomatoPhoto from "../../assets/Zomato.jpg";
 import PhotoGellory from "../../assets/PhotoGellory.jpg";
 import "./Works.css";
+import { Typography } from "@mui/material";
 
 function Works() {
   return (
     <>
       <div className="res-top">
-        <h2 className="project-header">My Project</h2>
+        <Typography variant="h4">My Project</Typography>
         <div className="project-list">
           <div className="project">
             <img src={NewsfeedPhoto} alt="" />

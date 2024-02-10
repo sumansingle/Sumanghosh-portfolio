@@ -14,7 +14,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow effect */
   transition: box-shadow 0.3s; /* Add a transition for smooth animation */
   padding: 1px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 

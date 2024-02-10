@@ -1,81 +1,110 @@
-import React, { useState } from 'react';
-import '../Contact From/ContactFrom.css';
+import React, { useState } from "react";
+import { Button, TextField, Typography } from "@mui/material";
+import "../Contact From/ContactFrom.css";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBAFy0DiVadpAiFsECgPGi59xWTVdwBGzE",
+  authDomain: "save-my-portfolio-msg.firebaseapp.com",
+  databaseURL:
+    "https://save-my-portfolio-msg-default-rtdb.asia-southeast1.firebasedatabase.app/portfolio.json",
+  projectId: "save-my-portfolio-msg",
+  storageBucket: "save-my-portfolio-msg.appspot.com",
+  messagingSenderId: "104870590446",
+  appId: "1:104870590446:web:362e3491fd53a6b90f80ff",
+  measurementId: "G-08TDMXM74T",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 const Form = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Submitted:', name, email, text);
-    // Perform additional logic here, such as sending data to a server
-    setSubmitted(true);
-  };
 
   const submitData = async (event) => {
     event.preventDefault();
     const nameValue = name;
     const emailValue = email;
     const textValue = text;
-    if(nameValue && emailValue && textValue){
-    const res = fetch('https://from-portfolio-default-rtdb.firebaseio.com/userDataRecords.json', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: nameValue,
-        email: emailValue,
-        text: textValue,
-      }),
-    });
-    if(res){
-        setSubmitted(true);
-    }else{
-        alert("pls fill the from")
+    if (nameValue && emailValue && textValue) {
+      try {
+        const res = await fetch(
+          "https://save-my-portfolio-msg-default-rtdb.asia-southeast1.firebasedatabase.app/portfolio.json",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: nameValue,
+              email: emailValue,
+              text: textValue,
+            }),
+          }
+        );
+        if (res.ok) {
+          setSubmitted(true);
+        } else {
+          alert("Error saving data");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error saving data");
+      }
+    } else {
+      alert("Please fill the form");
     }
-}else{
-    alert("pls fill the from")
-}
   };
 
   return (
     <div className="form-container">
-      <h2>Contact With me</h2>
+      <Typography variant="h4">Contact With Me</Typography>
       {submitted ? (
-        <p className="success-message">Form submitted successfully!</p>
+        <Typography variant="body1" className="success-message">
+          Form submitted successfully!
+        </Typography>
       ) : (
-        <form method='POST'>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <input
-              type="message"
-              id="text"
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
-          </div>
-          <button type="submit" onClick={submitData}>Submit</button>
+        <form onSubmit={submitData}>
+          <TextField
+            id="name"
+            label="Name"
+            variant="outlined"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            id="email"
+            label="Email"
+            variant="outlined"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            id="message"
+            label="Message"
+            variant="outlined"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            fullWidth
+            multiline
+            rows={4}
+            margin="normal"
+          />
+          <Button type="submit" variant="contained" color="primary">
+            Submit
+          </Button>
         </form>
       )}
     </div>
