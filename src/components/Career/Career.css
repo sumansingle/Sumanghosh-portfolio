@@ -2,7 +2,8 @@
   margin: 5px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 10px 10px 15px #a8aeb1, -10px -10px 15px #d2d8dd;
+  background-color: #424242;
+  box-shadow: 10px 10px 15px #303030, -10px -10px 15px #202020;
 }
 .job {
   padding-left: 30px; /* Adjust this value to create space for the dot */
@@ -17,7 +18,7 @@
 
 .line-skill {
   border-left: 2px solid darkred;
-  height: 1100px;
+  height: 50%px;
   margin-left: 20px;
   overflow: hidden;
 }
@@ -53,6 +54,11 @@ h1 {
   color: "";
 }
 
+h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: "";
+}
 /*.job {
 	margin-bottom: 30px;
 	border-bottom: 1px solid ;

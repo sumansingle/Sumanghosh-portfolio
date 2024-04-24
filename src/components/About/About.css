@@ -1,6 +1,6 @@
 .About {
-  background-color: #bdc3c7;
-  box-shadow: 15px 15px 20px #a8aeb1, -15px -15px 20px #d2d8dd;
+  background-color: #424242;
+  box-shadow: 15px 15px 20px #303030, -15px -15px 20px #202020;
   margin: 1px;
   /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/ /* Add a subtle box shadow */
   /*border-radius: 5px; /* Add rounded corners */
@@ -37,7 +37,7 @@
   margin: 40px;
   background-color: #2ec7c0;
   color: white;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .detailse {
   color: black;
